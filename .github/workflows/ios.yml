@@ -1,0 +1,62 @@
+name: Build and Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  ios:
+    runs-on: macos-latest
+    timeout-minutes: 40
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Show Xcode
+        run: xcodebuild -version
+
+      - name: Build and test
+        run: |
+          set -euo pipefail
+          DESTINATION="$(python3 - <<'PY'
+          import json
+          import subprocess
+          import sys
+
+          raw = subprocess.check_output(
+              ["xcrun", "simctl", "list", "devices", "available", "-j"],
+              text=True,
+          )
+          data = json.loads(raw)
+          candidates = []
+          for runtime, devices in data.get("devices", {}).items():
+              if "iOS" not in runtime:
+                  continue
+              for device in devices:
+                  name = device.get("name", "")
+                  if device.get("isAvailable") and name.startswith("iPhone"):
+                      candidates.append(device)
+          if not candidates:
+              print("No available iPhone simulator", file=sys.stderr)
+              sys.exit(1)
+
+          def rank(device):
+              name = device.get("name", "")
+              preferred = ("iPhone 16", "iPhone 17", "iPhone 15", "iPhone 14")
+              try:
+                  index = preferred.index(name)
+              except ValueError:
+                  index = len(preferred)
+              return (index, name)
+
+          chosen = sorted(candidates, key=rank)[0]
+          print(f"platform=iOS Simulator,id={chosen['udid']}")
+          PY
+          )"
+          echo "Destination: ${DESTINATION}"
+          xcodebuild test \
+            -project TugCheck.xcodeproj \
+            -scheme TugCheck \
+            -destination "${DESTINATION}" \
+            -configuration Debug \
+            CODE_SIGNING_ALLOWED=NO
