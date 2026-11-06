@@ -2,7 +2,12 @@ import AVFoundation
 import Foundation
 
 /// Speaks the "Go" cue. The timer starts when speech actually begins.
-final class SpeechService: NSObject, AVSpeechSynthesizerDelegate {
+///
+/// `AVSpeechSynthesizerDelegate` requires `Sendable`, but `AVSpeechSynthesizer`
+/// is not `Sendable`. The synthesizer is only used from the main thread.
+/// The delegate callback does not touch it; it hops to the main queue before
+/// reading `onSpeakStarted`.
+final class SpeechService: NSObject, AVSpeechSynthesizerDelegate, @unchecked Sendable {
     private let synthesizer = AVSpeechSynthesizer()
     var onSpeakStarted: ((String) -> Void)?
 
