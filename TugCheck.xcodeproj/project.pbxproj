@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DB1BABDDD2B7EF134874BE8 /* TugCheckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C172186B30C1E3C06F6EF90 /* TugCheckApp.swift */; };
+		16DF09001CB2D1E43B4178FF /* MobilityObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82CD63C91B9184105FD7919 /* MobilityObservation.swift */; };
+		15ED31643F05DB4B3F88E144 /* PeopleSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FFE020F5E98AF52C98AB47 /* PeopleSeeder.swift */; };
+		04E1758EBD0CCFA449A3298D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BE7E31DF40FAF5FE965374 /* Person.swift */; };
+		47411BA1B9399A4651C16025 /* TestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51EF2B4933A00E043CD4349 /* TestResult.swift */; };
+		5EF96AFCAA654294EFAB4480 /* Copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EEBE6181AB52BA9F7B8463 /* Copy.swift */; };
+		7B86C0A543F28FD77FCE6182 /* ResultFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C14383E986F6767497A5D75 /* ResultFormatting.swift */; };
+		8A1083D38E9392C661A131A5 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA2C6C0BC0562491F7E9E0 /* SpeechService.swift */; };
+		1390761FC48C44535C179E97 /* TestSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE30F62F0235BB0D6B0CEA00 /* TestSession.swift */; };
+		893802E8EAE44CBE395B0CA4 /* TimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42A01FDCD16E77F19E966 /* TimerService.swift */; };
+		97CC8B2F6855BA21B3EDE8D2 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95CE8271C90FA9F46C03CC /* AboutView.swift */; };
+		FB7E94F9BE5128EF70605977 /* AccessibleControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25AC8C7B9DB9A0CA235F8B7 /* AccessibleControls.swift */; };
+		99D6DEA092C8B4AA0530465E /* CheckFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7F8BE28E4FF107466BB0 /* CheckFlowView.swift */; };
+		C1E2164D90008EB1DE88273A /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC65BE7FB08118F36E66762 /* HistoryView.swift */; };
+		976B38AA8CB49D7754EF1CE5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB3AD6A7AE694F88BEC239 /* HomeView.swift */; };
+		2118640E00E4B9ACA9F1BDF4 /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E912832B1FB2D7A87E61E /* PeopleListView.swift */; };
+		9361786F8162E890512B12DE /* PersonEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F4C7DD9F486AE13E51FC02 /* PersonEditorView.swift */; };
+		6122689F20DFEE1D71DD3F2A /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F87294C13F691058A0F754 /* PracticeView.swift */; };
+		D2722FF4D269585901244B65 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351A60842F6873D986B95473 /* ResultView.swift */; };
+		C3B62192C084E28192716CFF /* SafetySetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328294EA77DB1667BE4AE6F8 /* SafetySetupView.swift */; };
+		9017705A877C18D4CDD89975 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0235020D15BF7A4299987C31 /* TestView.swift */; };
+		222F0DBFFE5EB23DCD3FD16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C36FFE920F24CEDB7CFDBFC /* Assets.xcassets */; };
+		D5CD763DC87A3EAE97B55D2D /* CopyAuditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0DEA699C5E4ABED8756C21 /* CopyAuditTests.swift */; };
+		A503A8967B85F1A9AEDF9A35 /* ResultFormattingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293E6D8D9BFF4B1BE09640F5 /* ResultFormattingTests.swift */; };
+		CD89CE104C743C2BADB06010 /* TimerServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A64C6F25A505AAB27605A /* TimerServiceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D799BAE6088A90139B415FCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29C7B681C8D62CBAC94D51C0;
+			remoteInfo = TugCheck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C172186B30C1E3C06F6EF90 /* TugCheckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TugCheckApp.swift; sourceTree = "<group>"; };
+		A82CD63C91B9184105FD7919 /* MobilityObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilityObservation.swift; sourceTree = "<group>"; };
+		E7FFE020F5E98AF52C98AB47 /* PeopleSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleSeeder.swift; sourceTree = "<group>"; };
+		21BE7E31DF40FAF5FE965374 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		B51EF2B4933A00E043CD4349 /* TestResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResult.swift; sourceTree = "<group>"; };
+		21EEBE6181AB52BA9F7B8463 /* Copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copy.swift; sourceTree = "<group>"; };
+		7C14383E986F6767497A5D75 /* ResultFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultFormatting.swift; sourceTree = "<group>"; };
+		44CA2C6C0BC0562491F7E9E0 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		BE30F62F0235BB0D6B0CEA00 /* TestSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSession.swift; sourceTree = "<group>"; };
+		0AF42A01FDCD16E77F19E966 /* TimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerService.swift; sourceTree = "<group>"; };
+		2C95CE8271C90FA9F46C03CC /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		F25AC8C7B9DB9A0CA235F8B7 /* AccessibleControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibleControls.swift; sourceTree = "<group>"; };
+		ED0A7F8BE28E4FF107466BB0 /* CheckFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckFlowView.swift; sourceTree = "<group>"; };
+		9AC65BE7FB08118F36E66762 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		EEBB3AD6A7AE694F88BEC239 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		029E912832B1FB2D7A87E61E /* PeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
+		74F4C7DD9F486AE13E51FC02 /* PersonEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonEditorView.swift; sourceTree = "<group>"; };
+		06F87294C13F691058A0F754 /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
+		351A60842F6873D986B95473 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		328294EA77DB1667BE4AE6F8 /* SafetySetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetySetupView.swift; sourceTree = "<group>"; };
+		0235020D15BF7A4299987C31 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		3E0DEA699C5E4ABED8756C21 /* CopyAuditTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyAuditTests.swift; sourceTree = "<group>"; };
+		293E6D8D9BFF4B1BE09640F5 /* ResultFormattingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultFormattingTests.swift; sourceTree = "<group>"; };
+		A60A64C6F25A505AAB27605A /* TimerServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerServiceTests.swift; sourceTree = "<group>"; };
+		68E77A9D7BC78A97D4F4E27B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C36FFE920F24CEDB7CFDBFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6CDB6E5D160E013280D3C68 /* TugCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TugCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E02A90D9643568EA39115CFB /* TugCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TugCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D3446C63F9EEB9172CAE05B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC40A40B1A5630AD4E7C4B11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF891E785808226D241F246E = {
+			isa = PBXGroup;
+			children = (
+				CF8D0BD4B75E8C2C174692A5 /* TugCheck */,
+				EEFE21A1443933CA4DE017DA /* TugCheckTests */,
+				00C45FD35CB0F9C5F764F070 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF8D0BD4B75E8C2C174692A5 /* TugCheck */ = {
+			isa = PBXGroup;
+			children = (
+				9C172186B30C1E3C06F6EF90 /* TugCheckApp.swift */,
+				68E77A9D7BC78A97D4F4E27B /* Info.plist */,
+				9B21A922C1487E69963B16A2 /* Models */,
+				A31D3374946AEC6B0D3886C2 /* Services */,
+				7EFEE443E878286B9201B84F /* Views */,
+				6C36FFE920F24CEDB7CFDBFC /* Assets.xcassets */,
+			);
+			path = TugCheck;
+			sourceTree = "<group>";
+		};
+		9B21A922C1487E69963B16A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A82CD63C91B9184105FD7919 /* MobilityObservation.swift */,
+				E7FFE020F5E98AF52C98AB47 /* PeopleSeeder.swift */,
+				21BE7E31DF40FAF5FE965374 /* Person.swift */,
+				B51EF2B4933A00E043CD4349 /* TestResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A31D3374946AEC6B0D3886C2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				21EEBE6181AB52BA9F7B8463 /* Copy.swift */,
+				7C14383E986F6767497A5D75 /* ResultFormatting.swift */,
+				44CA2C6C0BC0562491F7E9E0 /* SpeechService.swift */,
+				BE30F62F0235BB0D6B0CEA00 /* TestSession.swift */,
+				0AF42A01FDCD16E77F19E966 /* TimerService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7EFEE443E878286B9201B84F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C95CE8271C90FA9F46C03CC /* AboutView.swift */,
+				F25AC8C7B9DB9A0CA235F8B7 /* AccessibleControls.swift */,
+				ED0A7F8BE28E4FF107466BB0 /* CheckFlowView.swift */,
+				9AC65BE7FB08118F36E66762 /* HistoryView.swift */,
+				EEBB3AD6A7AE694F88BEC239 /* HomeView.swift */,
+				029E912832B1FB2D7A87E61E /* PeopleListView.swift */,
+				74F4C7DD9F486AE13E51FC02 /* PersonEditorView.swift */,
+				06F87294C13F691058A0F754 /* PracticeView.swift */,
+				351A60842F6873D986B95473 /* ResultView.swift */,
+				328294EA77DB1667BE4AE6F8 /* SafetySetupView.swift */,
+				0235020D15BF7A4299987C31 /* TestView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EEFE21A1443933CA4DE017DA /* TugCheckTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E0DEA699C5E4ABED8756C21 /* CopyAuditTests.swift */,
+				293E6D8D9BFF4B1BE09640F5 /* ResultFormattingTests.swift */,
+				A60A64C6F25A505AAB27605A /* TimerServiceTests.swift */,
+			);
+			path = TugCheckTests;
+			sourceTree = "<group>";
+		};
+		00C45FD35CB0F9C5F764F070 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6CDB6E5D160E013280D3C68 /* TugCheck.app */,
+				E02A90D9643568EA39115CFB /* TugCheckTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29C7B681C8D62CBAC94D51C0 /* TugCheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32995943DE67267A65D32CA9 /* Build configuration list for PBXNativeTarget "TugCheck" */;
+			buildPhases = (
+				507A349611DBB42F9CF9069B /* Sources */,
+				2D3446C63F9EEB9172CAE05B /* Frameworks */,
+				4C29BBC16528FEA9E858725B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TugCheck;
+			productName = TugCheck;
+			productReference = B6CDB6E5D160E013280D3C68 /* TugCheck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7EC8F98B7A265120217712DE /* TugCheckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6137A6F58D979B3DA500C290 /* Build configuration list for PBXNativeTarget "TugCheckTests" */;
+			buildPhases = (
+				283236DFCBED01B817B33E02 /* Sources */,
+				CC40A40B1A5630AD4E7C4B11 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE58E2B17C19600779694943 /* PBXTargetDependency */,
+			);
+			name = TugCheckTests;
+			productName = TugCheckTests;
+			productReference = E02A90D9643568EA39115CFB /* TugCheckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98F54143AB4E86B28C3AFEE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					29C7B681C8D62CBAC94D51C0 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					7EC8F98B7A265120217712DE = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 29C7B681C8D62CBAC94D51C0;
+					};
+				};
+			};
+			buildConfigurationList = 12D04D787E90C9B967248BFD /* Build configuration list for PBXProject "TugCheck" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF891E785808226D241F246E;
+			productRefGroup = 00C45FD35CB0F9C5F764F070 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29C7B681C8D62CBAC94D51C0 /* TugCheck */,
+				7EC8F98B7A265120217712DE /* TugCheckTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C29BBC16528FEA9E858725B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222F0DBFFE5EB23DCD3FD16F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		507A349611DBB42F9CF9069B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DB1BABDDD2B7EF134874BE8 /* TugCheckApp.swift in Sources */,
+				16DF09001CB2D1E43B4178FF /* MobilityObservation.swift in Sources */,
+				15ED31643F05DB4B3F88E144 /* PeopleSeeder.swift in Sources */,
+				04E1758EBD0CCFA449A3298D /* Person.swift in Sources */,
+				47411BA1B9399A4651C16025 /* TestResult.swift in Sources */,
+				5EF96AFCAA654294EFAB4480 /* Copy.swift in Sources */,
+				7B86C0A543F28FD77FCE6182 /* ResultFormatting.swift in Sources */,
+				8A1083D38E9392C661A131A5 /* SpeechService.swift in Sources */,
+				1390761FC48C44535C179E97 /* TestSession.swift in Sources */,
+				893802E8EAE44CBE395B0CA4 /* TimerService.swift in Sources */,
+				97CC8B2F6855BA21B3EDE8D2 /* AboutView.swift in Sources */,
+				FB7E94F9BE5128EF70605977 /* AccessibleControls.swift in Sources */,
+				99D6DEA092C8B4AA0530465E /* CheckFlowView.swift in Sources */,
+				C1E2164D90008EB1DE88273A /* HistoryView.swift in Sources */,
+				976B38AA8CB49D7754EF1CE5 /* HomeView.swift in Sources */,
+				2118640E00E4B9ACA9F1BDF4 /* PeopleListView.swift in Sources */,
+				9361786F8162E890512B12DE /* PersonEditorView.swift in Sources */,
+				6122689F20DFEE1D71DD3F2A /* PracticeView.swift in Sources */,
+				D2722FF4D269585901244B65 /* ResultView.swift in Sources */,
+				C3B62192C084E28192716CFF /* SafetySetupView.swift in Sources */,
+				9017705A877C18D4CDD89975 /* TestView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		283236DFCBED01B817B33E02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5CD763DC87A3EAE97B55D2D /* CopyAuditTests.swift in Sources */,
+				A503A8967B85F1A9AEDF9A35 /* ResultFormattingTests.swift in Sources */,
+				CD89CE104C743C2BADB06010 /* TimerServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE58E2B17C19600779694943 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29C7B681C8D62CBAC94D51C0 /* TugCheck */;
+			targetProxy = D799BAE6088A90139B415FCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C761B7D49C3C32C5F60E8010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACCCD85F61979F8ECCA377BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A393E557BBA174C592175785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TugCheck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tugcheck.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4848DE5FB3FF960B8E5B63DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TugCheck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tugcheck.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		0D633BD545D878A6647A1EBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tugcheck.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TugCheck.app/TugCheck";
+			};
+			name = Debug;
+		};
+		43ABF9DDFB26DCC1D7D88137 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tugcheck.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TugCheck.app/TugCheck";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12D04D787E90C9B967248BFD /* Build configuration list for PBXProject "TugCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C761B7D49C3C32C5F60E8010 /* Debug */,
+				ACCCD85F61979F8ECCA377BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32995943DE67267A65D32CA9 /* Build configuration list for PBXNativeTarget "TugCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A393E557BBA174C592175785 /* Debug */,
+				4848DE5FB3FF960B8E5B63DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6137A6F58D979B3DA500C290 /* Build configuration list for PBXNativeTarget "TugCheckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D633BD545D878A6647A1EBE /* Debug */,
+				43ABF9DDFB26DCC1D7D88137 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+}
